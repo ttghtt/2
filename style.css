@@ -1,0 +1,128 @@
+:root {
+  color-scheme: dark;
+  font-family: "Press Start 2P", "Courier New", monospace;
+  background: #0e1016;
+  color: #f3f6ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #27346b, #0e1016 45%);
+}
+
+.app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+header,
+.stats,
+section {
+  background: rgba(20, 24, 39, 0.86);
+  border: 2px solid #3b4e93;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 0 0 2px #111628;
+}
+
+h1,
+h2 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+header p {
+  margin: 0;
+  color: #d5ddff;
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
+.studio-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#studioCanvas {
+  width: 100%;
+  max-width: 512px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  border: 2px solid #607be0;
+  background: #1f2a52;
+  display: block;
+  margin-top: 12px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.stats div {
+  font-size: 0.72rem;
+}
+
+.tasks,
+.shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  background: #121933;
+  border: 2px solid #4e63ad;
+  border-radius: 8px;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+button {
+  appearance: none;
+  border: 2px solid #324ba8;
+  border-radius: 6px;
+  padding: 10px;
+  background: #5f7cff;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.68rem;
+}
+
+button:disabled {
+  background: #4d5578;
+  border-color: #3b4060;
+  cursor: not-allowed;
+}
+
+.workspace-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  font-size: 0.72rem;
+}
+
+.meta {
+  font-size: 0.66rem;
+  line-height: 1.6;
+  color: #bbcafc;
+  margin: 0;
+}
