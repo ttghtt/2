@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Идеальное рабочее место</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Идеальное рабочее место</h1>
+        <p>
+          Выполняй мини‑задания, получай фокус и улучшай свою студию: новые
+          мониторы, столы, комнаты и декор.
+        </p>
+      </header>
+
+      <section class="studio-section">
+        <div class="studio-heading">
+          <h2>Пиксельная студия</h2>
+          <p class="meta">Локальная библиотека pixel-art спрайтов (canvas).</p>
+        </div>
+        <canvas id="studioCanvas" width="512" height="288" aria-label="Пиксельная студия"></canvas>
+      </section>
+
+      <section class="stats">
+        <div><span>Уровень:</span> <strong id="level">1</strong></div>
+        <div><span>Опыт:</span> <strong id="xp">0</strong>/<span id="nextLevelXp">100</span></div>
+        <div><span>Фокус:</span> <strong id="focus">0</strong></div>
+      </section>
+
+      <section>
+        <h2>Задания</h2>
+        <div class="tasks" id="tasks"></div>
+      </section>
+
+      <section>
+        <h2>Магазин улучшений</h2>
+        <div class="shop" id="shop"></div>
+      </section>
+
+      <section>
+        <h2>Твоё пространство</h2>
+        <ul id="workspace" class="workspace-list"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
